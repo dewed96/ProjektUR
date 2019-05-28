@@ -1,261 +1,448 @@
-<!DOCTYPE html><!-- HTML5 -->
-<html prefix="og: http://ogp.me/ns#" lang="pl-PL" dir="ltr">
-	<head>
-		<title>Kantor_online</title>
-		<meta charset="utf-8" />
-		<!--[if IE]><meta http-equiv="ImageToolbar" content="False" /><![endif]-->
-		<meta name="author" content="Dawid" />
-		<meta name="generator" content="Incomedia WebSite X5 Go 2019.1.7 - www.websitex5.com" />
-		<meta name="description" content="Strona projektowa mająca na celu wymianę walut z kont bankowych, przechowywania pieniędzy na koncie internetowym oraz codziennego śledzenia kursów najbardziej populatnych walut." />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		
-		<link rel="stylesheet" href="style/reset.css?2019-1-7-1" media="screen,print" />
-		<link rel="stylesheet" href="style/print.css?2019-1-7-1" media="print" />
-		<link rel="stylesheet" href="style/style.css?2019-1-7-1" media="screen,print" />
-		<link rel="stylesheet" href="style/template.css?2019-1-7-1" media="screen" />
-		<link rel="stylesheet" href="pcss/index.css?2019-1-7-1-636927777848334977" media="screen,print" />
-		<script src="res/jquery.js?2019-1-7-1"></script>
-		<script src="res/x5engine.js?2019-1-7-1" data-files-version="2019-1-7-1"></script>
-		<script>
-			window.onload = function(){ checkBrowserCompatibility('Twoja przeglądarka nie obsługuje funkcji potrzebnych do wyświetlenia tej witryny.','Twoja przeglądarka może nie obsługiwać funkcji niezbędnych do wyświetlenia tej witryny.','[1]Aktualizuj przeglądarkę[/1] lub [2]kontynuuj bez aktualizacji[/2].','http://outdatedbrowser.com/'); };
-			x5engine.utils.currentPagePath = 'index.html';
-			x5engine.boot.push(function () { x5engine.imPageToTop.initializeButton({}); });
-		</script>
-		<link rel="icon" href="favicon.png?2019-1-7-1-636927777848255076" type="image/png" />
-	</head>
-	<body>
-		<div id="imPageExtContainer">
-			<div id="imPageIntContainer">
-				<div id="imHeaderBg"></div>
-				<div id="imFooterBg"></div>
-				<div id="imPage">
-					<header id="imHeader">
-						<h1 class="imHidden">Kantor_online</h1>
-						<div id="imHeaderObjects"><div id="imHeader_imMenuObject_01_wrapper" class="template-object-wrapper"><!-- UNSEARCHABLE --><div id="imHeader_imMenuObject_01"><div id="imHeader_imMenuObject_01_container"><div class="hamburger-button hamburger-component"><div><div><div class="hamburger-bar"></div><div class="hamburger-bar"></div><div class="hamburger-bar"></div></div></div></div><div class="hamburger-menu-background-container hamburger-component">
-	<div class="hamburger-menu-background menu-mobile menu-mobile-animated hidden">
-		<div class="hamburger-menu-close-button"><span>&times;</span></div>
-	</div>
-</div>
-<ul class="menu-mobile-animated hidden">
-	<li class="imMnMnFirst imPage" data-link-paths=",/index.html,/">
-<div class="label-wrapper">
-<div class="label-inner-wrapper">
-		<a class="label" href="index.html">
-Strona główna		</a>
-</div>
-</div>
-	</li><li class="imMnMnMiddle imPage" data-link-paths=",/o-nas.html">
-<div class="label-wrapper">
-<div class="label-inner-wrapper">
-		<a class="label" href="o-nas.html">
-O nas		</a>
-</div>
-</div>
-	</li><li class="imMnMnMiddle imPage" data-link-paths=",/kontakt.html">
-<div class="label-wrapper">
-<div class="label-inner-wrapper">
-		<a class="label" href="kontakt.html">
-Kontakt		</a>
-</div>
-</div>
-	</li><li class="imMnMnLast imLevel"><div class="label-wrapper"><div class="label-inner-wrapper"><span class="label">Język</span></div></div></li></ul></div></div><!-- UNSEARCHABLE END --><script>
-var imHeader_imMenuObject_01_settings = {
-	'menuId': 'imHeader_imMenuObject_01',
-	'animationDuration': 1000,
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <title>waluty24.pl</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: gray;
+  }
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #8ae1ff;
+    font-weight: 600;
+    margin-bottom: 30px;
+	
+	
+  }
+    h6 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #8ae1ff;
+    font-weight: 600;
+    margin-bottom: 30px;
+	text-align: center;
+	margin-top: 30px;
+
+  }
+  .normal{
+  padding-top: 25px;
+  font-size: 24px;
+  color: black;
+  }
+    .normal2{
+  padding-top: 25px;
+  font-size: 26px;
+  color: white;
+  padding-bottom: 25px;
+  
+  }
+  h3 {
+	color:red;
+	font-size: 20px;
+  }
+  .top {
+  margin-top: 50px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+  } 
+
+h5 {
+color:#4822f0;
+}  
+h5 a {
+color:red;
 }
-x5engine.boot.push(function(){x5engine.initMenu(imHeader_imMenuObject_01_settings)});
-$(function () {$('#imHeader_imMenuObject_01_container ul li').not('.imMnMnSeparator').each(function () {    var $this = $(this), timeout = 0;    $this.on('mouseenter', function () {        if($(this).parents('#imHeader_imMenuObject_01_container-menu-opened').length > 0) return;         clearTimeout(timeout);        setTimeout(function () { $this.children('ul, .multiple-column').stop(false, false).fadeIn(); }, 250);    }).on('mouseleave', function () {        if($(this).parents('#imHeader_imMenuObject_01_container-menu-opened').length > 0) return;         timeout = setTimeout(function () { $this.children('ul, .multiple-column').stop(false, false).fadeOut(); }, 250);    });});});
-
-</script>
-</div><div id="imHeader_imTextObject_05_wrapper" class="template-object-wrapper"><div id="imHeader_imTextObject_05">
-	<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imHeader_imTextObject_05_tab0" style="opacity: 1; ">
-		<div class="text-inner">
-			<span class="fs20lh1-5 cf1 ff1">Sprawnie </span><div><span class="fs20lh1-5 cf1 ff1"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i szybko</span></div>
-		</div>
-	</div>
-
-</div>
-</div><div id="imHeader_imObjectImage_06_wrapper" class="template-object-wrapper"><div id="imHeader_imObjectImage_06"><div id="imHeader_imObjectImage_06_container"><img src="images/nag-owek.png" title="" alt="" />
-</div></div></div></div>
-					</header>
-					<div id="imStickyBarContainer">
-						<div id="imStickyBarGraphics"></div>
-						<div id="imStickyBar">
-							<div id="imStickyBarObjects"><div id="imStickyBar_imMenuObject_01_wrapper" class="template-object-wrapper"><!-- UNSEARCHABLE --><div id="imStickyBar_imMenuObject_01"><div id="imStickyBar_imMenuObject_01_container"><div class="hamburger-button hamburger-component"><div><div><div class="hamburger-bar"></div><div class="hamburger-bar"></div><div class="hamburger-bar"></div></div></div></div><div class="hamburger-menu-background-container hamburger-component">
-	<div class="hamburger-menu-background menu-mobile menu-mobile-animated hidden">
-		<div class="hamburger-menu-close-button"><span>&times;</span></div>
-	</div>
-</div>
-<ul class="menu-mobile-animated hidden">
-	<li class="imMnMnFirst imPage" data-link-paths=",/index.html,/">
-<div class="label-wrapper">
-<div class="label-inner-wrapper">
-		<a class="label" href="index.html">
-Strona główna		</a>
-</div>
-</div>
-	</li><li class="imMnMnMiddle imPage" data-link-paths=",/o-nas.html">
-<div class="label-wrapper">
-<div class="label-inner-wrapper">
-		<a class="label" href="o-nas.html">
-O nas		</a>
-</div>
-</div>
-	</li><li class="imMnMnMiddle imPage" data-link-paths=",/kontakt.html">
-<div class="label-wrapper">
-<div class="label-inner-wrapper">
-		<a class="label" href="kontakt.html">
-Kontakt		</a>
-</div>
-</div>
-	</li><li class="imMnMnLast imLevel"><div class="label-wrapper"><div class="label-inner-wrapper"><span class="label">Język</span></div></div></li></ul></div></div><!-- UNSEARCHABLE END --><script>
-var imStickyBar_imMenuObject_01_settings = {
-	'menuId': 'imStickyBar_imMenuObject_01',
-	'animationDuration': 1000,
+.sss {
+color:red;
 }
-x5engine.boot.push(function(){x5engine.initMenu(imStickyBar_imMenuObject_01_settings)});
-$(function () {$('#imStickyBar_imMenuObject_01_container ul li').not('.imMnMnSeparator').each(function () {    var $this = $(this), timeout = 0;    $this.on('mouseenter', function () {        if($(this).parents('#imStickyBar_imMenuObject_01_container-menu-opened').length > 0) return;         clearTimeout(timeout);        setTimeout(function () { $this.children('ul, .multiple-column').stop(false, false).fadeIn(); }, 250);    }).on('mouseleave', function () {        if($(this).parents('#imStickyBar_imMenuObject_01_container-menu-opened').length > 0) return;         timeout = setTimeout(function () { $this.children('ul, .multiple-column').stop(false, false).fadeOut(); }, 250);    });});});
+.margin{
+margin-bottom:15px;
+margin-top: 15px;
+}
+.kk {
+padding-top:25px;
+}
 
+  .jumbotron {
+    background-color: #00dd00;
+    color: #fff;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo-small {
+    color: #00dd00;
+    font-size: 50px;
+  }
+
+.fa-2x{
+float:left;
+}
+  .fa-2x h4{
+float: right;
+    margin: auto;
+    margin-left: 20px;
+
+  }
+  .logo {
+    color: #00dd00;
+    font-size: 200px;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #00dd00;
+  }
+  .carousel-indicators li {
+    border-color: #00dd00;
+  }
+  .carousel-indicators li.active {
+    background-color: #00dd00;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  .panel {
+    border: 1px solid #00dd00; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .blue {
+	background-color: #bae1ff;
+	margin-bottom: 35px;
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid #00dd00;
+    background-color: gray !important;
+    color: #00dd00;
+  }
+  .panel-heading {
+    color: gray !important;
+    background-color: gray !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: gray;
+    color: gray;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color: gray;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: white !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: white !important;
+    background-color: red !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: green !important;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: red;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+  .obrazek {
+  width: 400px;
+  height: auto;
+  }
+  </style>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-132506564-1');
 </script>
-</div></div>
-						</div>
-					</div>
-					<a class="imHidden" href="#imGoToCont" title="Pomiń menu główne">Przejdź do treści</a>
-					<div id="imSideBar">
-						<div id="imSideBarObjects"></div>
-					</div>
-					<div id="imContentGraphics"></div>
-					<main id="imContent">
-						<a id="imGoToCont"></a>
-						<div id="imPageRow_1" class="imPageRow">
-						
-						</div>
-						<div id="imCell_14" class=""  data-responsive-sequence-number="1"> <div id="imCellStyleGraphics_14"></div><div id="imCellStyleBorders_14"></div><div id="imTextObject_14">
-							<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imTextObject_14_tab0" style="opacity: 1; ">
-								<div class="text-inner">
-									<div class="imHeading1 imTACenter"><span class="cf1">Wymień bezpiecznie u nas<br>Usługi wymiany walut</span></div><div><div class="imTACenter"><span class="fs14lh1-5">Nasza witryna zajmuje się dogodną wymianą popularnych walut.<br>Zaoszczędź czas i pieniądze.<br>Skorzystajz wygodnych usług walutowych.</span></div></div>
-								</div>
-							</div>
-						
-						</div>
-						</div><div id="imPageRow_2" class="imPageRow">
-						<div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; overflow: hidden;"><div id="imPageRowGraphics_2"></div></div>
-						</div>
-						<div id="imCell_18" class=""  data-responsive-sequence-number="2"> <div id="imCellStyleGraphics_18"></div><div id="imCellStyleBorders_18"></div><div id="imObjectImage_18"><div id="imObjectImage_18_container"><img src="images/banknoty.jpg" title="" alt="" />
-						</div></div></div><div id="imCell_19" class=""  data-responsive-sequence-number="3"> <div id="imCellStyleGraphics_19"></div><div id="imCellStyleBorders_19"></div><div id="imTextObject_19">
-							<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imTextObject_19_tab0" style="opacity: 1; ">
-								<div class="text-inner">
-									<div class="imHeading2 imTALeft">Problem?</div><div><div class="imTALeft"><span class="fs14lh1-5">Skontaktuj się z naszym doradcą.</span></div></div><div class="imTALeft"><span class="fs14lh1-5"><br></span></div><div class="imTALeft"><span class="fs14lh1-5"><b><a href="kontakt.html" class="imCssLink" onclick="return x5engine.utils.location('kontakt.html', null, false)">CONTACT US &gt;</a></b></span></div>
-								</div>
-							</div>
-						
-						</div>
-						</div><div id="imPageRow_3" class="imPageRow">
-						<div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; overflow: hidden;"><div id="imPageRowGraphics_3"></div></div>
-						</div>
-						<div id="imCell_29" class=""  data-responsive-sequence-number="4"> <div id="imCellStyleGraphics_29"></div><div id="imCellStyleBorders_29"></div><div id="imTextObject_29">
-							<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imTextObject_29_tab0" style="opacity: 1; ">
-								<div class="text-inner">
-									<div><div><span class="fs20lh1-5 cf1 ff1">Kalkulator walutowy</span></div><div><span class="fs12lh1-5 cf1 ff1">Sprawdź kurs i zobacz, ile możesz zyskać.</span></div></div>
-								</div>
-							</div>
-						
-						</div>
-						</div><div id="imCell_30" class=""  data-responsive-sequence-number="5"> <div id="imCellStyleGraphics_30"></div><div id="imCellStyleBorders_30"></div><div id="imTextObject_30">
-							<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imTextObject_30_tab0" style="opacity: 1; ">
-								<div class="text-inner">
-									<div><div><span class="fs20lh1-5 cf1 ff1">Kursy walut</span></div><div><span class="fs12lh1-5 cf1 ff1">Bądź na bieżąco z aktualnymi notowaniami.</span></div></div>
-								</div>
-							</div>
-						
-						</div>
-						</div><div id="imPageRow_4" class="imPageRow">
-						
-						</div>
-						<div id="imCell_23" class=""  data-responsive-sequence-number="6"> <div id="imCellStyleGraphics_23"></div><div id="imCellStyleBorders_23"></div><div id="imTextObject_23">
-							<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imTextObject_23_tab0" style="opacity: 1; ">
-								<div class="text-inner">
-									<div class="imHeading2 imTARight">Tworzymy innowacyjne usługi finansowe.</div><div><div class="imTARight"><span class="fs14lh1-5">Naszym celem jest Twoja wygoda.<br><b><span class="cf1">więcej</span></b><b><a href="o-nas.html" class="imCssLink" onclick="return x5engine.utils.location('o-nas.html', null, false)"><span class="cf1"> </span>&gt;</a></b></span><br></div></div>
-								</div>
-							</div>
-						
-						</div>
-						</div><div id="imCell_24" class=""  data-responsive-sequence-number="7"> <div id="imCellStyleGraphics_24"></div><div id="imCellStyleBorders_24"></div><div id="imObjectImage_24"><div id="imObjectImage_24_container"><img src="images/przekaz.jpg" title="" alt="" />
-						</div></div></div><div id="imPageRow_5" class="imPageRow">
-						<div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; overflow: hidden;"><div id="imPageRowGraphics_5"></div></div>
-						</div>
-						<div id="imCell_28" class=""  data-responsive-sequence-number="8"> <div id="imCellStyleGraphics_28"></div><div id="imCellStyleBorders_28"></div><div id="imTextObject_28">
-							<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imTextObject_28_tab0" style="opacity: 1; ">
-								<div class="text-inner">
-									<div class="imHeading2 imTACenter"><span class="cf1">Aktualnie posiadamy 26 walut.</span></div>
-								</div>
-							</div>
-						
-						</div>
-						</div><div id="imPageRow_6" class="imPageRow">
-						<div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; overflow: hidden;"><div id="imPageRowGraphics_6" class="imContentDataContainer"></div></div>
-						</div>
-						<div id="imCell_31" class=""  data-responsive-sequence-number="9"> <div id="imCellStyleGraphics_31"></div><div id="imCellStyleBorders_31"></div><div id="imTextObject_31">
-							<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imTextObject_31_tab0" style="opacity: 1; ">
-								<div class="text-inner">
-									<div><span class="fs28lh1-5 cf1 ff1">Wymień </span></div><div><span class="fs28lh1-5 cf1 ff1">walutę</span></div>
-								</div>
-							</div>
-						
-						</div>
-						</div><div id="imCell_32" class=""  data-responsive-sequence-number="10"> <div id="imCellStyleGraphics_32"></div><div id="imCellStyleBorders_32"></div><div id="imTextObject_32">
-							<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imTextObject_32_tab0" style="opacity: 1; ">
-								<div class="text-inner">
-									<div><span class="fs28lh1-5 cf1 ff1">Przekazywanie </span></div><div><span class="fs28lh1-5 cf1 ff1">pieniędzy na konto</span></div>
-								</div>
-							</div>
-						
-						</div>
-						</div><div id="imPageRow_7" class="imPageRow">
-						<div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; overflow: hidden;"><div id="imPageRowGraphics_7" class="imContentDataContainer"></div></div>
-						</div>
-						<div id="imCell_33" class=""  data-responsive-sequence-number="11"> <div id="imCellStyleGraphics_33"></div><div id="imCellStyleBorders_33"></div><div id="imTextObject_33">
-							<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imTextObject_33_tab0" style="opacity: 1; ">
-								<div class="text-inner">
-									<div><span class="fs28lh1-5 cf1 ff1">Wymiana z rachunku bankowego</span></div>
-								</div>
-							</div>
-						
-						</div>
-						</div><div id="imCell_34" class=""  data-responsive-sequence-number="12"> <div id="imCellStyleGraphics_34"></div><div id="imCellStyleBorders_34"></div><div id="imTextObject_34">
-							<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imTextObject_34_tab0" style="opacity: 1; ">
-								<div class="text-inner">
-									<div><span class="fs28lh1-5 cf1 ff1">Jak wymieniać?</span></div>
-								</div>
-							</div>
-						
-						</div>
-						</div>
-					</main>
-					<footer id="imFooter">
-						<div id="imFooterObjects"><div id="imFooter_imTextObject_01_wrapper" class="template-object-wrapper"><div id="imFooter_imTextObject_01">
-	<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imFooter_imTextObject_01_tab0" style="opacity: 1; ">
-		<div class="text-inner">
-			<div class="imTALeft"><div data-line-height="1.15" class="lh1-15 imTAJustify"><div class="imTARight"><b class="fs12lh1-15 cf1">Lorem Ipsum</b></div><div data-line-height="1.15" class="lh1-15 imTARight"><span class="fs12lh1-15 cf1">Dolor sit amet, 12</span></div><div data-line-height="1.15" class="lh1-15 imTARight"><span class="fs12lh1-15 cf1">12345 Consectetur</span></div><div data-line-height="1.15" class="lh1-15 imTARight"><span class="fs12lh1-15 cf1"><br></span></div></div><div data-line-height="1.15" class="lh1-15 imTARight"><span class="fs12lh1-15 cf1">+00 012 345 678</span><br></div></div>
-		</div>
-	</div>
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">    
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+	  <li><a href="#myPage"><strong>Główna</strong></a></li>
+        <li><a href="#onas"><strong>O nas</strong></a></li>
+        <li><a href="#services"><strong>Usługi</strong></a></li>
+        <li><a href="#contact"><strong>Kontakt</strong></a></li>
+		<li><a href="kursy.html"><strong>Kursy</strong></a></li>
+		<li><a href="login.php"><strong>Zaloguj</strong></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="col-sm-12 text-center logo">
+  <img src="naglowek.png" class="img-fluid">
+  </div>
+</div>
+
+<div id="about" class="container-fluid">
+  <div class="row">
+
+    <div class="col-sm-12 text-center">
+      <h2>Wymień bezpiecznie u nas</h2>
+	  <h2>Usługi wymiany walut</h2>
+      <h4>Nasza witryna zajmuje się dogodną wymianą popularnych walut.<br>
+	  Zaoszczędź czas i pieniądze.<br>
+	  Skorzystaj z wygodnych usług walutowych</h4>
+    </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="banknoty.jpg" class="rounded float-left obrazek">
+    </div>
+    <div class="col-sm-8">
+      <h2>Problem?</h2>
+	  <h4>Skontaktuj się z naszym doradcą.</h4>
+	  <h3>CONTACT US></h3>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="col-sm-12 text-center blue">
+<div class="col-sm-6 text-center"><div class="normal">Kalkulator walutowy</div><h4>Sprawdź kurs i zobacz, ile możesz zyskać.</h4></div>
+<div class="col-sm-6 text-center"><div class="normal">Kursy walut</div><h4>Bądź na bieżąco z aktualnymi notowaniami.</h4></div>
 
 </div>
-</div><div id="imFooter_imTextObject_08_wrapper" class="template-object-wrapper"><div id="imFooter_imTextObject_08">
-	<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imFooter_imTextObject_08_tab0" style="opacity: 1; ">
-		<div class="text-inner">
-			<div class="imTALeft"><div data-line-height="1" class="lh1 imTAJustify"><span class="fs12lh1 cf1">Created with WebSite X5</span></div></div>
-		</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-8 text-right">
+	<h2>Tworzymy innowycyjnen usługi<br>finansowe.</h2>
+	  <h4>Naszym celem jest Twoja wygoda.</h4>
+	  <h5><strong>więcej <a>></a></h5>
+	  </div>
+	    <div class="col-sm-4">
+      <img src="przekaz.jpg" class="rounded float-right obrazek">
+    </div>
+      
+    </div>
+  </div>
+  
+<div class="col-sm-12 text-center normal2 blue">Aktualnie posiadamy 26 walut.</div>
+<div class="col-sm-12 text center kk">
+<div class="col-sm-6 text center "><h6>Wymień walutę</h6></div>
+<div class="col-sm-6 text center "><h6>Przekazywanie pieniędzy na konto</h6></div>
+</div>
+<div class="col-sm-12 text center">
+<div class="col-sm-6 text center"><h6>Wymiana z rachunku bankowego</h6></div>
+<div class="col-sm-6 text center"><h6>Jak wymieniać</h6></div>
+</div>
+<div id="onas" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12 text-center top bg-grey">
+      <h2>Szybka wymiana</h2>
+      <h4>Nasze hasło to szybka wymiana. Cechuje nas szybkość i prostota. Wymiana pieniędzy następuje bardzo
+	  szybko dzięki kontraktom z większością banków.<br> Pieniądze na koncie do 24h. Gwarantujemy nie tylko szybkość ale również wygode.</h4>
+    </div>
+	    <div class="col-sm-12 text-center top">
+	<h2>Nasze wartości</h2>
+	<h4>Naszą główną ambicją jest wprowadzanie innowyjnych rozwiązań w obszarze finansów. Kreujemy atrakcyjne, przejrzyste i korzystne usługi adresowane<br> do klientów indywidualnych, biznesowych i instytucjonalnych.
+	Jasno określone zasady i priorytety są podstawą naszej działalności. To one wyznaczają kierunek<br> ekspansji i umożliwiają ciągły rozwój udostępnionych przez nas produktów finansowych.</h4>
 	</div>
+</div>
+</div>
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center ">
+<div class="col-sm-12 bg-grey">
+  <h2>Nasze usługi</h2>
+  <h4>Wygodny dostęp, intuicyjne użytkowanie i bezpieczeństwo to kluczowe elementy, w oparciu o które budujemy ofertę usług w ramach<br> portalu finansowego</h4>
+  <br>
+ </div> 
+  
+    <div class="col-sm-12 text-center top">
+	    <div class="col-sm-6 text-center"><h2>Bezpieczeństwo<br><br></h2><h4>Działamy zgodnie z zasadami określanymi przez organy nadzorujące rynki finansowe.<br>
+		Spełniamy wymogi związane z ochroną danych osobowych.<br>
+		Aktywnie przeciwdziałamy praniu brudnych pieniędzy i finansowaniu terroryzmu.</h4></div>
+	    <div class="col-sm-3 text-center margin"><i class="fas fa-check-circle fa-2x"><h4>Przelewy bezgotówkowe</h4></i></div>
+	    <div class="col-sm-3 text-center margin"><i class="fas fa-check-circle fa-2x"><h4>Szyfrowane połączenia</h4></i></div>
+	    <div class="col-sm-3 text-center margin"><i class="fas fa-check-circle fa-2x"><h4>Ochrona danych osobowych</h4></i></div>
+	    <div class="col-sm-3 text-center margin"><i class="fas fa-check-circle fa-2x"><h4>Bezpieczn aplikacje</h4></i></div>
+	    <div class="col-sm-3 text-center margin"><i class="fas fa-check-circle fa-2x"><h4>Licencje regulatorów</h4></i></div>
+	    <div class="col-sm-3 text-center margin"><i class="fas fa-check-circle fa-2x"><h4>Międzynarodowe standardy</h4></i></div>
 
 </div>
-</div><div id="imFooter_imObjectTitle_09_wrapper" class="template-object-wrapper"><div id="imFooter_imObjectTitle_09"><span id ="imFooter_imObjectTitle_09_text" >LAUNDRY</span></div></div></div>
-					</footer>
-				</div>
-				<span class="imHidden"><a href="#imGoToCont" title="Czytaj stronę ponownie">Wróć do spisu treści</a></span>
-			</div>
-		</div>
-		
-		<noscript class="imNoScript"><div class="alert alert-red">Aby korzystać z tej strony musisz włączyć obsługę JavaScript.</div></noscript>
-	</body>
+  </div>
+</div>
+
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">Kontakt</h2>
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <p>Skontaktuj się z naszymi doradcami</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +48 17 258 65 87</p>
+	  <p><span class="glyphicon glyphicon-phone"></span> +48 17 258 65 88</p>
+    </div>
+  </div>
+</div>
+
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
 </html>
+			
